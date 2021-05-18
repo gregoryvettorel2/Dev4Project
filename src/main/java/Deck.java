@@ -72,7 +72,7 @@ public class Deck implements Iterator<Kaart> {
     }
 
     public static void main(String[] args) {
-        Deck deck1 = new Deck();
+        Deck deck1 = Deck.getInstance();
         System.out.println(deck1);
         }
 
