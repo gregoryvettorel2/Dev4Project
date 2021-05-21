@@ -5,9 +5,7 @@ import java.util.Iterator;
 
 public class Deck implements Iterator<Kaart> {
     private ArrayList<Kaart> kaarten;
-
-    //Variabelen
-    private static Deck ifisnull;
+    private static Deck enigeInstantie;
     private int iterator = 0;
     private int totaalKaarten = 52;
 
@@ -46,11 +44,11 @@ public class Deck implements Iterator<Kaart> {
     }
 
     public static Deck getInstance() {
-        if(ifisnull == null) {
-            ifisnull = new Deck();
+        if(enigeInstantie == null) {
+            enigeInstantie = new Deck();
         }
 
-        return ifisnull;
+        return enigeInstantie;
     }
 
     public boolean hasNext() {
@@ -71,11 +69,12 @@ public class Deck implements Iterator<Kaart> {
         return "Deck{" + "kaarten=" + kaarten + '}';
     }
 
+    /*
     public static void main(String[] args) {
         Deck deck1 = Deck.getInstance();
         System.out.println(deck1);
         }
-
+*/
 }
 
 //Eventuele methoden
