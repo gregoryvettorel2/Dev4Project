@@ -8,15 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class DeckTester {
     private int totaalKaarten = 52;
     @Test
+    //Singleton test
     void GetDeck() {
         //Maakt twee instanties aan
         Deck d1 = Deck.getInstance();
         Deck d2 = Deck.getInstance();
         //Test of ze gelijk zijn
         assertEquals(d1, d2);
-        //Test lukt
     }
 
+    //Iterator test
     @Test
     void testVoorIteratorPat(){
         Deck deck = Deck.getInstance();

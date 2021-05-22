@@ -1,10 +1,12 @@
-KaartenWaardenDeco.java
- KaartenWaardenDeco
-HogerLagerSpel.java
- HogerLagerSpel
-Players.java
- Players
 Kaart.java
  Kaart
 Deck.java
  Deck
+Players.java
+ Players
+HogerOfLager.java
+ HogerOfLager
+GameStateUI.java
+ GameStateUI
+States.java
+ States
