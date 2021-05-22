@@ -7,12 +7,11 @@ public class Kaart {
 
     //Constructor
     public Kaart(String waarde) {
-
         this.heeftWaarde = waarde;
     }
-//Getter
+    //Getter
     public String getKaartWaarde(){
         return kaartWaarde;
     }
 }
-//
+

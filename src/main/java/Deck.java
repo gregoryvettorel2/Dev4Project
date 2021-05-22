@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class Deck implements Iterator<Kaart> {
+public class Deck implements Iterator<Kaart>{
     private ArrayList<Kaart> kaarten;
     private static Deck enigeInstantie;
     private int iterator = 0;
@@ -66,19 +66,21 @@ public class Deck implements Iterator<Kaart> {
 
     @Override
     public String toString() {
-        return "Deck{" + "kaarten=" + kaarten + '}';
+        return "kaarten=" + kaarten + '}';
     }
 
     /*
     public static void main(String[] args) {
         Deck deck1 = Deck.getInstance();
-        System.out.println(deck1);
+        String theString = Arrays.deck1;
+        System.out.println( theString );
         }
-*/
+
+     */
 }
 
 //Eventuele methoden
 
 //whileHasNext
-//
+
 //Legende: H = Harten, K = Klaver, S = Schoppen, R = Ruiten

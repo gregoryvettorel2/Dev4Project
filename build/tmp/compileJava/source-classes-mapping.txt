@@ -1,12 +1,8 @@
-Kaart.java
- Kaart
-Deck.java
- Deck
 Players.java
  Players
+Kaart.java
+ Kaart
 HogerOfLager.java
  HogerOfLager
-GameStateUI.java
- GameStateUI
-States.java
- States
+Deck.java
+ Deck
