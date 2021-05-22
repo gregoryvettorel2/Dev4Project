@@ -9,6 +9,7 @@ class DeckTester {
     private int totaalKaarten = 52;
     @Test
     void GetDeck() {
+        //Maakt twee instanties aan
         Deck d1 = Deck.getInstance();
         Deck d2 = Deck.getInstance();
         //Test of ze gelijk zijn
@@ -18,7 +19,6 @@ class DeckTester {
 
     @Test
     void testVoorIteratorPat(){
-
         Deck deck = Deck.getInstance();
         ArrayList<Kaart> kaarten = new ArrayList<>();
 

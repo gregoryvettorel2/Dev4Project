@@ -1,3 +1,9 @@
+KaartenWaardenDeco.java
+ KaartenWaardenDeco
+HogerLagerSpel.java
+ HogerLagerSpel
+Players.java
+ Players
 Kaart.java
  Kaart
 Deck.java
