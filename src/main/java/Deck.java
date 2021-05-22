@@ -80,5 +80,5 @@ public class Deck implements Iterator<Kaart> {
 //Eventuele methoden
 
 //whileHasNext
-
+//
 //Legende: H = Harten, K = Klaver, S = Schoppen, R = Ruiten
