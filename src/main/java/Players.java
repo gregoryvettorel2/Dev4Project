@@ -9,27 +9,27 @@ public class Players {
     //Constructor
     public Players(String playername){
         //Ik zal deck door twee moeten splitsen of elke speler een beperkt aantal kaarten van deck moeten geven
-        //Bv Array index van 0 tot 9 nemen voor 10 kaarten elk
-        kaartStack = new ArrayList<>();
+        //Krijgen elk bij instantiering random 10 kaarten en deze value wordt opgeteld, en Array index van 0 tot 9 nemen voor 10 kaarten elk bv
+        kaartStack = new ArrayList<Kaart>();
     }
     public int kaartValues(){
-        int enkeleKaartValue = 0;
+        int stackValue = 0;
 
         for(Kaart k : kaartStack){
-            if(k.getKaartWaarde().contains("Aas"))enkeleKaartValue=1;
-            else if(k.getKaartWaarde().contains("2"))enkeleKaartValue=2;
-            else if(k.getKaartWaarde().contains("3"))enkeleKaartValue=3;
-            else if(k.getKaartWaarde().contains("4"))enkeleKaartValue=4;
-            else if(k.getKaartWaarde().contains("5"))enkeleKaartValue=5;
-            else if(k.getKaartWaarde().contains("6"))enkeleKaartValue=6;
-            else if(k.getKaartWaarde().contains("7"))enkeleKaartValue=7;
-            else if(k.getKaartWaarde().contains("8"))enkeleKaartValue=8;
-            else if(k.getKaartWaarde().contains("9"))enkeleKaartValue=9;
-            else if(k.getKaartWaarde().contains("10"))enkeleKaartValue=10;
-            else if(k.getKaartWaarde().contains("11"))enkeleKaartValue=11;
-            else if(k.getKaartWaarde().contains("12"))enkeleKaartValue=12;
-            else if(k.getKaartWaarde().contains("13"))enkeleKaartValue=13;
+            if(k.getKaartWaarde().contains("Aas"))stackValue+=1;
+            else if(k.getKaartWaarde().contains("2"))stackValue+=2;
+            else if(k.getKaartWaarde().contains("3"))stackValue+=3;
+            else if(k.getKaartWaarde().contains("4"))stackValue+=4;
+            else if(k.getKaartWaarde().contains("5"))stackValue+=5;
+            else if(k.getKaartWaarde().contains("6"))stackValue+=6;
+            else if(k.getKaartWaarde().contains("7"))stackValue+=7;
+            else if(k.getKaartWaarde().contains("8"))stackValue+=8;
+            else if(k.getKaartWaarde().contains("9"))stackValue+=9;
+            else if(k.getKaartWaarde().contains("10"))stackValue+=10;
+            else if(k.getKaartWaarde().contains("11"))stackValue+=11;
+            else if(k.getKaartWaarde().contains("12"))stackValue+=12;
+            else if(k.getKaartWaarde().contains("13"))stackValue+=13;
         }
-        return enkeleKaartValue;
+        return stackValue;
     }
 }
