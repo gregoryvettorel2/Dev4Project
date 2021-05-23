@@ -29,6 +29,7 @@ const kaarten = Spel.creëer();
 Array.prototype.shuffle = function(){
 var i = this.length, j, temp;
 while(--i > 0){
+      //Hier hebben we gebruik moeten maken van impure functions, door de math.random te gebruiken. We hadden namelijk een willekeurig cijfer nodig om het kaart volgens willekeurige indexen te shufflen
     j = Math.floor(Math.random() * (i+1));
     temp = this[j];
     this[j] = this[i];
